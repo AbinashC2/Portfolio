@@ -1,5 +1,5 @@
 # Personal-Portfolio
-Personal Portfolio Website of Dhairya Majmudar a programming enthusiast from IIIT Kota
+Personal Portfolio Website of Abinash Mohapatra a programming enthusiast from Bhubaneswar,Odisha
 <br>
   <hr>
 
@@ -15,7 +15,7 @@ npm i
 npm run dev
 ```
 
-**PS: Don't forget to star the repo (top right most button) it motivates me to make more such websites.**
+
 
 
 

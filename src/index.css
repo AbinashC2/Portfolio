@@ -9,5 +9,5 @@ html {
 
 body {
 
-    @apply dark:bg-[#00040f] bg-[#e2e2e2ab]
+    @apply dark:bg-[#000000] bg-[#e2e2e2ab]
 }

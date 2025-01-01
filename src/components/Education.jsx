@@ -1,6 +1,7 @@
 import Lottie from "lottie-react";
 import education from "../assets/lottie/education.json";
-import IIIT_KOTA from "../assets/IIIT_Kota.png";
+
+import kiit from "../assets/kiit.png"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -26,25 +27,25 @@ const Education = () => {
           <div className="max-w-[520px] mt-[52px] p-7 max-sm:p-3">
             <div className="flex gap-5">
               <img
-                src={IIIT_KOTA}
+                src={kiit}
                 alt="IIIT KOTA"
                 className="w-[90px] h-[90px]"
               />
-              <h1 className="bg-clip-text text-transparent bg-gradient-to-r max-sm:text-[17px] from-amber-500 via-orange-600 to-yellow-500 dark:from-[#ff6600] dark:to-slate-100 font-semibold text-2xl w-[300px] h-[100px] tracking-wider ">
-                Indian Institue Of Information Technology Kota
+              <h1 className="bg-clip-text text-transparent bg-gradient-to-r max-sm:text-[17px]bg-gradient-to-r from-[#e66465] to-[#9198e5] dark:to-slate-100 font-semibold text-2xl w-[300px] h-[100px] tracking-wider ">
+                Kalinga Institute of Industrial Technology
               </h1>
             </div>
 
             <div className="mt-7 flex flex-col gap-5 text-left pl-4">
               <h3 className="capitalize  text-slate-800 dark:text-slate-300 text-xl max-sm:text-lg">
-                bachelor of technology
+                Bachelor in Computer Science 
               </h3>
               <p className="italic capitalize text-gray-500 dark:text-slate-500 text-xl max-sm:text-lg leading-9">
-                November 2022 - may 2026
+                July 2020 - July 2023
               </p>
 
               <p className="capitalize text-gray-500 dark:text-slate-500 text-xl max-sm:text-lg leading-9">
-                electronics and communication engineering
+                Computer Science  
               </p>
             </div>
           </div>
@@ -55,6 +56,7 @@ const Education = () => {
           />
         </div>
       </div>
+      
     </section>
   );
 };
