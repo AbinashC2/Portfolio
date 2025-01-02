@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import "./ContactMe.css"; // Create a separate CSS file for styles
 
-const key = process.env.access_key
+// const key = process.env.access_key;
 const ContactMe = () => {
   const [formState, setFormState] = useState({
     firstName: "",
@@ -61,12 +61,12 @@ const ContactMe = () => {
 
   return (
     <div className="flex items-center min-h-screen ">
-      <div className="w-1/2 flex flex-col justify-center text-center text-white px-10">
+      <div className="w-5/6 flex flex-col justify-center text-center  text-white px-10">
       <h1 className="text-4xl font-bold">I would Love to Hear From You</h1>
       <p className="mt-4">Reach out with any questions or feedback you may have!</p>
     </div>
   <div className="container">
-    <div className="max-w-lg mx-auto my-5 bg-white p-4 rounded-md shadow-sm">
+    <div className="max-w-lg mx-auto my-5 border bg-white p-4 rounded-md shadow-sm ml-auto">
       <div className="text-center">
         <h1 className="my-2 text-2xl font-medium  dark:text-gray-800">
           Contact Us
@@ -162,7 +162,7 @@ const ContactMe = () => {
                 type="text"
                 name="phone"
                 id="phone"
-                placeholder="+1 (555) 1234-567"
+                placeholder="+91 (555) 1234-567"
                 value={formState.phone}
                 onChange={handleChange}
                 required
