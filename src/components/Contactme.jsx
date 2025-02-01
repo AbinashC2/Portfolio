@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import "./ContactMe.css"; // Create a separate CSS file for styles
 
-// const key = process.env.access_key;
+
 const ContactMe = () => {
   const [formState, setFormState] = useState({
     firstName: "",
@@ -37,7 +37,7 @@ const ContactMe = () => {
         },
         body: JSON.stringify({
           ...formState,
-          access_key: "YOUR_ACCESS_KEY_HERE",
+          access_key: "c52183b6-08ab-433a-afe4-de13121aa552",
           subject: "New Submission from Web3Forms",
         }),
       });
