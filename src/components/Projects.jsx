@@ -1,10 +1,5 @@
-import Project_prop from "./project_prop";
+import ProjectProp from "../components/Project_prop"; // Corrected import
 import {
-  // GPT4,
-  // Portfolio,
-  // Rocket,
-  // WellBeing,
-  // Game,
   portfolio,
   hiteisee,
   blog,
@@ -20,15 +15,13 @@ import {
   SiReact,
   SiTailwindcss,
   SiVite,
-  // SiHtml5,
-  // SiCss3,
-  // SiJavascript,
 } from "react-icons/si";
 
 const Projects = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+  
   return (
     <section
       id="projects"
@@ -43,10 +36,10 @@ const Projects = () => {
           className="PROJECTS mt-16 grid gap-10 grid-cols-2 max-sm:grid-cols-1"
           data-aos="zoom-out-down"
         >
-          <Project_prop
+          <ProjectProp
             title="Portfolio Website"
-            para="Personal portfolio website created with react and Tailwind CSS"
-            img={portfolio }
+            para="Personal portfolio website created with React and Tailwind CSS"
+            img={portfolio}
             link=""
             github_link=""
             react={
@@ -72,10 +65,10 @@ const Projects = () => {
             }
           />
 
-            <Project_prop
+          <ProjectProp
             title="Consulting Company Website"
             para="Developed a professional consulting website for a client as a freelance project."
-            img={hiteisee }
+            img={hiteisee}
             link="https://hiteisee.in/"
             github_link=""
             react={
@@ -101,12 +94,10 @@ const Projects = () => {
             }
           />
 
-
-
-            <Project_prop
-            title=" Blog Platform"
-            para=" Built a blog platform with React.js for creating, editing, and managing posts."
-            img={ blog }
+          <ProjectProp
+            title="Blog Platform"
+            para="Built a blog platform with React.js for creating, editing, and managing posts."
+            img={blog}
             link=""
             github_link=""
             react={
@@ -132,10 +123,10 @@ const Projects = () => {
             }
           />
 
-            <Project_prop
+          <ProjectProp
             title="Netflix-Clone"
             para="Developed a Netflix-Clone"
-            img={netflix }
+            img={netflix}
             link=""
             github_link="https://github.com/AbinashC2/Netflix-Clone"
             react={
@@ -160,10 +151,11 @@ const Projects = () => {
               </Tooltip>
             }
           />
-            <Project_prop
-            title="Ram Impex Texile Company"
+
+          <ProjectProp
+            title="Ram Impex Textile Company"
             para="I completed a freelance website project for Ramimpex, a textile brand based in Chennai. The website was designed to enhance the brand's online presence and provide a seamless user experience."
-            img={ram }
+            img={ram}
             link=""
             github_link="https://github.com/AbinashC2/Ram---Textile"
             react={
@@ -188,11 +180,10 @@ const Projects = () => {
               </Tooltip>
             }
           />
-          
-          
         </div>
       </div>
     </section>
   );
 };
+
 export default Projects;
